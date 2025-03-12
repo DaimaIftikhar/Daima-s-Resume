@@ -1,4 +1,4 @@
-/* styles.css */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
     background-color: #f4f4f4;
 }
 .container {
-    max-width: 870px; /* Reduced width from full width to 800px */
+    max-width: 870px; 
     margin: auto;
     background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -73,32 +73,32 @@ h3 {
     
 }
 .projects {
-    margin-top: 10px; /* Reduced top margin for section */
+    margin-top: 10px; 
   }
   
   .project {
     margin-bottom: 12px; 
-    margin-top: 12px;/* Space between projects */
-    page-break-inside: avoid; /* Prevent splitting across pages */
+    margin-top: 12px;
+    page-break-inside: avoid;
   }
   
   .project p {
-    margin: 6px 0; /* Reduced vertical spacing */
-    line-height: 1.3; /* Tighter line spacing */
+    margin: 6px 0; 
+    line-height: 1.3; 
   }
   
   .project p strong {
    
-    margin-bottom: 2px; /* Space after project title */
+    margin-bottom: 2px;
     
   }
   
-  /* For project descriptions */
+  
   .project p:not(strong) {
     font-size: 16px;
-    /* Slight indentation */
+    
   }
-  /* Add to your CSS */
+ 
 .skill-category {
     margin-bottom: 12px;
 }
