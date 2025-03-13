@@ -1,4 +1,4 @@
-
+/* styles.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
     background-color: #f4f4f4;
 }
 .container {
-    max-width: 870px; 
+    max-width: 870px;
     margin: auto;
     background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@ h3 {
     padding-bottom: 5px;
     color: #2C3E50;
 }
-.skills-list span {
+.skills-list span, .skill-category span {
     display: inline-block;
     background: #2C3E50;
     color: white;
@@ -61,8 +61,7 @@ h3 {
 }
 .interests span {
     display: inline-block;
-    border-color: #2C3E50;
-    border: 2px solid #2C3E50 ;
+    border: 2px solid #2C3E50;
     padding: 5px 10px;
     border-radius: 5px;
     margin: 5px 5px 0 0;
@@ -70,47 +69,31 @@ h3 {
 }
 .project p, .job p {
     margin: 5px 0;
-    
 }
 .projects {
-    margin-top: 10px; 
-  }
-  
-  .project {
-    margin-bottom: 12px; 
+    margin-top: 10px;
+}
+.project {
+    margin-bottom: 12px;
     margin-top: 12px;
     page-break-inside: avoid;
-  }
-  
-  .project p {
-    margin: 6px 0; 
-    line-height: 1.3; 
-  }
-  
-  .project p strong {
-   
+}
+.project p {
+    margin: 6px 0;
+    line-height: 1.3;
+}
+.project p strong {
     margin-bottom: 2px;
-    
-  }
-  
-  
-  .project p:not(strong) {
-    font-size: 16px;
-    
-  }
- 
+}
 .skill-category {
     margin-bottom: 12px;
 }
-
 .skill-category h4 {
-    
     font-size: 13px;
     margin: 8px 0 4px 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
-
 .skill-category span {
     display: inline-block;
     background: #2C3E50;
@@ -119,4 +102,49 @@ h3 {
     border-radius: 3px;
     margin: 3px 3px 0 0;
     font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    main {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        width: 100%;
+    }
+    .skills-list span, .skill-category span {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    .interests span {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+    header h1 {
+        font-size: 22px;
+    }
+    header h2 {
+        font-size: 18px;
+    }
+    header p {
+        font-size: 12px;
+    }
+    .skills-list span, .skill-category span {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+    .interests span {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
 }
