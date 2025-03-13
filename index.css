@@ -50,7 +50,7 @@ h3 {
     padding-bottom: 5px;
     color: #2C3E50;
 }
-.skills-list span, .skill-category span {
+.skills-list span {
     display: inline-block;
     background: #2C3E50;
     color: white;
@@ -61,6 +61,7 @@ h3 {
 }
 .interests span {
     display: inline-block;
+    border-color: #2C3E50;
     border: 2px solid #2C3E50;
     padding: 5px 10px;
     border-radius: 5px;
@@ -85,6 +86,9 @@ h3 {
 .project p strong {
     margin-bottom: 2px;
 }
+.project p:not(strong) {
+    font-size: 16px;
+}
 .skill-category {
     margin-bottom: 12px;
 }
@@ -105,10 +109,9 @@ h3 {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container {
-        width: 95%;
-        padding: 15px;
+        max-width: 90%;
     }
     main {
         flex-direction: column;
@@ -116,19 +119,15 @@ h3 {
     .left-column, .right-column {
         width: 100%;
     }
-    .skills-list span, .skill-category span {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-    .interests span {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
     header {
         text-align: center;
+        padding: 15px;
     }
     header h1 {
         font-size: 22px;
@@ -139,12 +138,36 @@ h3 {
     header p {
         font-size: 12px;
     }
-    .skills-list span, .skill-category span {
+    main {
+        padding: 10px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .skills-list span, .interests span, .skill-category span {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+    header h2 {
+        font-size: 16px;
+    }
+    header p {
         font-size: 11px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .skills-list span, .interests span, .skill-category span {
+        font-size: 10px;
         padding: 3px 6px;
     }
-    .interests span {
-        font-size: 11px;
-        padding: 3px 6px;
+    .project p, .job p {
+        font-size: 13px;
     }
 }
