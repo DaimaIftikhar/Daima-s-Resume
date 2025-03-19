@@ -108,6 +108,64 @@ h3 {
     font-size: 12px;
 }
 
+/* Update education section styling */
+.education {
+    margin-top: 20px;
+  }
+  
+  /* Add to your CSS */
+.education-entry {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 25px;
+}
+
+.education-entry:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 18px;  /* Adjusted */
+    bottom: -27px;  /* Adjusted */
+    width: 2px;
+    background-color: #2C3E50;
+}
+
+.education-entry::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #2C3E50;
+    border-radius: 50%;
+    background: white;
+    z-index: 1;  /* Ensure bullets stay on top */
+}
+  
+  .education-entry strong {
+    display: block;
+    color: #2C3E50;
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  
+  .education-entry .year {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .degree-gpa {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .gpa {
+    color: #2C3E50;
+    font-weight: 500;
+  }
 /* Responsive Design */
 @media (max-width: 1024px) {
     .container {
